@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dowód kwantyfikatora szczególnego</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Dowód kwantyfikatora szczególnego</h1>
+    <p>
+        Wyrażenie <strong>∃!x : p(x)</strong> oznacza, że istnieje dokładnie jedno x, dla którego predykat p(x) jest prawdziwy.
+    </p>
+    <p>
+        Równoważność:
+        <strong>∃!x : p(x) ≡ (∃x : p(x) ∧ (∀y, z : (p(y) ∧ p(z)) ⇒ y = z))</strong>
+    </p>
+    <p>
+        Wyjaśnienie:
+        <ul>
+            <li><strong>∃x : p(x)</strong> - istnieje co najmniej jedno x, dla którego p(x) jest prawdziwe.</li>
+            <li><strong>∀y, z : (p(y) ∧ p(z)) ⇒ y = z</strong> - jeśli istnieją dwie liczby y i z, które spełniają p(y) i p(z), to muszą być równe, co oznacza unikalność.</li>
+        </ul>
+    </p>
+    <p>
+        Podsumowując, aby wyrazić "istnieje dokładnie jeden x spełniający p(x)", potrzebujemy zarówno warunku egzystencjalnego, jak i warunku unikalności.
+    </p>
+</body>
+</html>
+
+
+
